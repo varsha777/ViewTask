@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f9609"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <ImageView
+        android:id="@+id/ivBook"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Book name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBook" />
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="price"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintLeft_toRightOf="@+id/textDuration"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBookName" />
+
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/textBookName"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/ivBook"
+        android:layout_toRightOf="@id/ivBook"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBookName" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="347dp"
+        android:layout_height="172dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="#d3d99f"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDuration"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ivBook"
+            android:text="sdasfdsdf"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#666"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
